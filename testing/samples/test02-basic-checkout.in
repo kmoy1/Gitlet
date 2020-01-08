@@ -1,0 +1,13 @@
+# A simple test of adding, committing, modifying, and checking out.
+> init
+<<<
++ test.txt wug.txt
+> add test.txt
+<<<
+> commit "added test"
+<<<
++ test.txt notwug.txt
+# Must change
+> checkout -- test.txt
+<<<
+= test.txt wug.txt
